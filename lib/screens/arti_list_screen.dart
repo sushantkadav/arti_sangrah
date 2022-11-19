@@ -11,31 +11,35 @@ class ArtiListScreen extends StatelessWidget {
         backgroundColor: Color(0xFFB73E3E),
       ),
       body: Container(
-        decoration: new BoxDecoration(
-          color : Color(0xFFFFE9B1)
-        ),
-          child: (
-        ListView.builder(
-            itemCount: artiList.length,
-            itemBuilder: (context, index) {
-              Arti arti = artiList[index];
-              return Card(
-                child: ListTile(
-                  title: Text(arti.title, style: TextStyle(color: Colors.red),),
-                  subtitle: Text(arti.year.toString()),
-                  leading: Icon(Icons.ac_unit_outlined),
-                  trailing: Icon(Icons.arrow_forward_rounded),
-                  tileColor: Colors.amberAccent,
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ArtiDetailScreen(arti)));
-                  },
-                ),
-              );
-            })
-    )),
+          decoration: new BoxDecoration(color: Color(0xFFFFE9B1)),
+          child: (GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 2,
+                  crossAxisSpacing: 4.0,
+                  mainAxisSpacing: 4.0),
+              itemCount: artiList.length,
+              itemBuilder: (context, index) {
+                Arti arti = artiList[index];
+                return Card(
+                  child: ListTile(
+                    title: Text(
+                      arti.title,
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    subtitle: Text(arti.subtile.toString()),
+                    leading: Icon(Icons.ac_unit_outlined),
+                    // trailing: Icon(Icons.arrow_forward_rounded),
+                    tileColor: Colors.amberAccent,
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ArtiDetailScreen(arti)));
+                    },
+                  ),
+                );
+              }))),
     );
   }
 }

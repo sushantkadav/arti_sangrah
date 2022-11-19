@@ -18,7 +18,7 @@ class ArtiDetailScreen extends StatelessWidget {
             Icon(Icons.accessibility_sharp),
             Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(arti.year.toString(),
+                child: Text(arti.subtile.toString(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 17.0, fontStyle: FontStyle.italic))),
