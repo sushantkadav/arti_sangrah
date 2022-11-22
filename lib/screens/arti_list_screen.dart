@@ -35,7 +35,7 @@ class ArtiListScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ArtiDetailScreen(arti)));
+                              builder: (context) => arti.nextScreen));
                     },
                   ),
                 );

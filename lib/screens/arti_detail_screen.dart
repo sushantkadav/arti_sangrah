@@ -24,7 +24,7 @@ class ArtiDetailScreen extends StatelessWidget {
                         fontSize: 17.0, fontStyle: FontStyle.italic))),
             Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(arti.description,
+                child: Text("arti.description",
                     textAlign: TextAlign.justify,
                     style: TextStyle(fontSize: 22.0)))
           ],
