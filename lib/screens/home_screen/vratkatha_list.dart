@@ -9,7 +9,6 @@ class VratkathaList extends StatelessWidget {
       body: Padding(
           padding: const EdgeInsets.all(8.0),
           child:  Text("Vratkatha List")
-
       ),
     );
   }
