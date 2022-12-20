@@ -6,6 +6,8 @@ import 'package:arti_sangrah/screens/home_screen/pooja_path.dart';
 import 'package:arti_sangrah/screens/home_screen/sanskrit_strot_list.dart';
 import 'package:arti_sangrah/screens/home_screen/vaidik_prakaran_list.dart';
 import 'package:arti_sangrah/screens/home_screen/vratkatha_list.dart';
+import 'package:arti_sangrah/screens/home_screen/poojan_samagri_list.dart';
+
 import 'package:flutter/material.dart';
 
 class Arti{
@@ -28,6 +30,7 @@ class Arti{
     Arti(title: "नामावली", subtile: "द्वादशनाम, शतनाम, सहस्त्रनाम", nextScreen: NamavaliList(), imgUrl: "imgUrl"),
     Arti(title: "व्रतकथा", subtile: "सत्यनारायण", nextScreen:VratkathaList(), imgUrl: "imgUrl"),
     Arti(title: "ग्रंथावली", subtile: "सप्तशती", nextScreen: GranthavaliList(), imgUrl: "imgUrl"),
-    Arti(title: "पूजापाठ TV", subtile: "", nextScreen: PoojaPath(), imgUrl: "imgUrl")
+    Arti(title: "पूजापाठ TV", subtile: "", nextScreen: PoojaPath(), imgUrl: "imgUrl"),
+    Arti(title: "पूजन सामग्री सूची", subtile: "", nextScreen: PoojanSamagariList(), imgUrl: "imgUrl")
 
   ];

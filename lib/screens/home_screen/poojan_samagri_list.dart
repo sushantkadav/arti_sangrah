@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import  'package:arti_sangrah/model/home/vratkatha.dart';
+import  'package:arti_sangrah/model/home/poojan_samagri.dart';
 
-class VratkathaList extends StatelessWidget {
+class PoojanSamagariList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("व्रतकथा"),
+        title: Text("पूजन सामग्री सूची"),
         backgroundColor: Color(0xFFB73E3E),
       ),
       body: Container(
@@ -17,16 +17,16 @@ class VratkathaList extends StatelessWidget {
                   childAspectRatio: 2,
                   crossAxisSpacing: 4.0,
                   mainAxisSpacing: 4.0),
-              itemCount: vratkathaList.length,
+              itemCount: poojanSamagariList.length,
               itemBuilder: (context, index) {
-                Vratkatha vratkatha = vratkathaList[index];
+                PoojanSamagari poojaSamagari = poojanSamagariList[index];
                 return Card(
                   child: ListTile(
                     title: Text(
-                      vratkatha.title,
+                      poojaSamagari.title,
                       style: TextStyle(color: Colors.red),
                     ),
-                    subtitle: Text(vratkatha.subtile.toString()),
+                    subtitle: Text(poojaSamagari.subtile.toString()),
                     leading: Icon(Icons.ac_unit_outlined),
                     // trailing: Icon(Icons.arrow_forward_rounded),
                     tileColor: Colors.amberAccent,
